@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+
+:root {
+    --blue: #0F2C67;
+    --red: #CD1818;
+    --orange: #F3950D;
+    --yellow: #F4E185;
+
+    --fredoka: 'Fredoka One', cursive;
+    --lexend: 'Lexend', sans-serif;
+}
+
+/* header */
+* {
+
+    font-family: var(--lexend);
+}
+
+.navbar {
+    background-color: var(--blue) !important;
+}
+
+.navbar-right {
+    margin: 0 0 0 auto;
+}
+
+.navbar .navbar-toggler {
+    background-color: transparent !important;
+
+}
+
+.navbar .navbar-toggler {
+    border: 1px solid var(--orange);
+}
+
+
+#home {
+    padding-top: 80px;
+    height: 100vh;
+    background-color: var(--blue);
+    color: var(--yellow);
+    padding: 200px 0;
+}
+
+#home .col-md-12 img {
+    width: 20%;
+}
+
+#home button {
+    cursor: pointer;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+#home button:active {
+    transform: translate(100px, 52px);
+    -webkit-transform: translate(0px, 5px);
+    background-color: var(--orange);
+}
+
+@media only screen and (max-width: 750px) {
+    #home .col-md-12 img {
+        width: 60%;
+    }
+}
+
+/* header end */
+
+/* about us  */
+#about-us {
+    height: 65vh;
+    background-color: var(--yellow);
+    color: var(--blue);
+    padding-top: 40px;
+}
+
+#about-us .col-md-4 img {
+    width: 100%;
+    padding: auto;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+    #about-us {
+        height: 112vh;
+    }
+
+    #about-us .col-md-4 img {
+        width: 70%;
+        padding-top: 30px;
+    }
+}
+
+/* about us end */
+
+/* our project */
+#project {
+    background-color: var(--blue);
+}
+
+#project h1 {
+    color: var(--yellow);
+}
+
+#project .col-md-6 .card {
+    background-color: var(--yellow);
+}
+
+#project .col-md-6 .card:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+    transition: all 0.3s;
+}
+
+#project .col-md-6 img {
+    width: 70%;
+    margin: auto;
+}
+
+#project .col-md-6 .btn {
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    color: black;
+    cursor: pointer;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+#project .col-md-6 .btn:active {
+    transform: translate(100px, 52px);
+    -webkit-transform: translate(0px, 5px);
+    background-color: var(--yellow);
+}
+
+@media only screen and (max-width: 750px) {
+    /* #project .card {
+        margin-top: 50px;
+    } */
+}
+
+/* our project end */
+
+/* contact */
+#contact {
+    background-color: var(--yellow);
+}
+
+#contact .col-md-4{
+    padding: 0 0 0 80px;
+}
+
+@media only screen and (max-width: 750px) {
+    #contact .col-md-4{
+        padding-left: 40px;
+    }
+}
+/* contact end */
+
+/* footer */
+footer {
+    background-color: var(--blue);
+    color: white;
+    padding: 3px;
+}
+/* footer end */
